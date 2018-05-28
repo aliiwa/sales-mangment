@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="sales_mangment.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ALIWA-PC</Value>
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="User">
+      <Value Profile="(Default)">seles_db</Value>
+    </Setting>
+    <Setting Name="mode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SQL</Value>
+    </Setting>
+    <Setting Name="id" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ba</Value>
+    </Setting>
+    <Setting Name="password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ba</Value>
+    </Setting>
+    <Setting Name="username" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="user_password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="user_id" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

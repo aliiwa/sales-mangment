@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9884816A-F1F0-4CA9-AC76-C271B7D8A756}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sales_mangment</RootNamespace>
+    <AssemblyName>sales-mangment</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\dll\dll\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="N2C">
+      <HintPath>..\..\..\..\N2C.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\CLS_bills.cs" />
+    <Compile Include="BL\CLS_Customer.cs" />
+    <Compile Include="BL\CLS_inoies.cs" />
+    <Compile Include="BL\CLS_Product.cs" />
+    <Compile Include="BL\CLS_Report.cs" />
+    <Compile Include="BL\CLS_Supplay.cs" />
+    <Compile Include="BL\CLS_users.cs" />
+    <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="PL\bills1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\bills1.Designer.cs">
+      <DependentUpon>bills1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_category.Designer.cs">
+      <DependentUpon>frm_category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_choose_coustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_choose_coustomer.Designer.cs">
+      <DependentUpon>frm_choose_coustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_choose_supplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_choose_supplay.Designer.cs">
+      <DependentUpon>frm_choose_supplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_main.Designer.cs">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_unit.Designer.cs">
+      <DependentUpon>frm_unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\option\uc_option_connect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\option\uc_option_connect.Designer.cs">
+      <DependentUpon>uc_option_connect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\option\uc_option_db.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\option\uc_option_db.Designer.cs">
+      <DependentUpon>uc_option_db.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\report\frm_close_balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\report\frm_close_balance.Designer.cs">
+      <DependentUpon>frm_close_balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\report\uc_report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\report\uc_report.Designer.cs">
+      <DependentUpon>uc_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\report\uc_rep_balance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\report\uc_rep_balance.Designer.cs">
+      <DependentUpon>uc_rep_balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\report\uc_rep_coutomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\report\uc_rep_coutomer.Designer.cs">
+      <DependentUpon>uc_rep_coutomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\report\uc_rep_product.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\report\uc_rep_product.Designer.cs">
+      <DependentUpon>uc_rep_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\report\uc_rep_supplyer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\report\uc_rep_supplyer.Designer.cs">
+      <DependentUpon>uc_rep_supplyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\uc_bills11.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\uc_bills11.Designer.cs">
+      <DependentUpon>uc_bills11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\uc_bills12.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\uc_bills12.Designer.cs">
+      <DependentUpon>uc_bills12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\uc_coustomer1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\uc_coustomer1.Designer.cs">
+      <DependentUpon>uc_coustomer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\uc_option.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\uc_option.Designer.cs">
+      <DependentUpon>uc_option.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\uc_point_sales1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\uc_point_sales1.Designer.cs">
+      <DependentUpon>uc_point_sales1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\uc_procduct1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\uc_procduct1.Designer.cs">
+      <DependentUpon>uc_procduct1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\uc_supplyer1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\uc_supplyer1.Designer.cs">
+      <DependentUpon>uc_supplyer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\uc_users.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\uc_users.Designer.cs">
+      <DependentUpon>uc_users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\users\uc_user_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\users\uc_user_control.Designer.cs">
+      <DependentUpon>uc_user_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\bills1.resx">
+      <DependentUpon>bills1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_category.resx">
+      <DependentUpon>frm_category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_choose_coustomer.resx">
+      <DependentUpon>frm_choose_coustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_choose_supplay.resx">
+      <DependentUpon>frm_choose_supplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_main.resx">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_unit.resx">
+      <DependentUpon>frm_unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\option\uc_option_connect.resx">
+      <DependentUpon>uc_option_connect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\option\uc_option_db.resx">
+      <DependentUpon>uc_option_db.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\report\frm_close_balance.resx">
+      <DependentUpon>frm_close_balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\report\uc_report.resx">
+      <DependentUpon>uc_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\report\uc_rep_balance.resx">
+      <DependentUpon>uc_rep_balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\report\uc_rep_coutomer.resx">
+      <DependentUpon>uc_rep_coutomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\report\uc_rep_product.resx">
+      <DependentUpon>uc_rep_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\report\uc_rep_supplyer.resx">
+      <DependentUpon>uc_rep_supplyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\uc_bills11.resx">
+      <DependentUpon>uc_bills11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\uc_bills12.resx">
+      <DependentUpon>uc_bills12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\uc_coustomer1.resx">
+      <DependentUpon>uc_coustomer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\uc_option.resx">
+      <DependentUpon>uc_option.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\uc_point_sales1.resx">
+      <DependentUpon>uc_point_sales1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\uc_procduct1.resx">
+      <DependentUpon>uc_procduct1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\uc_supplyer1.resx">
+      <DependentUpon>uc_supplyer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\uc_users.resx">
+      <DependentUpon>uc_users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\users\uc_user_control.resx">
+      <DependentUpon>uc_user_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RPT\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
