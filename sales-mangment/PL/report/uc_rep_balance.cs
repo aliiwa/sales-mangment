@@ -25,5 +25,22 @@ namespace sales_mangment.PL.report
             frm_close_balance frm = new frm_close_balance();
             frm.ShowDialog();
         }
+
+        private void dgv_balance_DoubleClick(object sender, EventArgs e)
+        {
+
+            dgv_product.DataSource = rpt.GET_ALL_PALANCE_DETAILS( Convert.ToDateTime( this.dgv_balance.CurrentRow.Cells[0].Value.ToString()));
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            RPT.rpt_palance_1 rpt_1 = new RPT.rpt_palance_1();
+            RPT.frm_report frm1 = new RPT.frm_report();
+            DateTime date_1 = Convert.ToDateTime(this.dgv_balance.CurrentRow.Cells[0].Value.ToString());
+            rpt_1.SetDataSource(rpt.GET_ALL_PALANCE_DETAILS(date_1));
+            frm1.crystalReportViewer1.ReportSource = rpt_1;
+           
+            frm1.ShowDialog();
+        }
     }
 }

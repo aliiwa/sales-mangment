@@ -37,21 +37,21 @@ namespace sales_mangment.BL
             return Dt;
         }
 
-        //// اجراء البحث عن الارصدة
-        //public DataTable GET_ALL_PALANCE(DateTime date)
-        //{
-        //    DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
-        //    DataTable Dt = new DataTable();
+        // اجراء البحث عن الارصدة
+        public DataTable GET_ALL_PALANCE_DETAILS(DateTime date)
+        {
+            DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
+            DataTable Dt = new DataTable();
 
-        //    SqlParameter[] param = new SqlParameter[1];
+            SqlParameter[] param = new SqlParameter[1];
 
-        //    param[0] = new SqlParameter("@date", SqlDbType.DateTime);
-        //    param[0].Value = date;
+            param[0] = new SqlParameter("@date", SqlDbType.DateTime);
+            param[0].Value = date;
 
-        //    Dt = DAL.SelectData("SERACH_FIRST_QTY", param);
-        //    DAL.close();
-        //    return Dt;
-        //}
+            Dt = DAL.SelectData("GET_ALL_PALANCE_DETAILS", param);
+            DAL.close();
+            return Dt;
+        }
 
 
     }
