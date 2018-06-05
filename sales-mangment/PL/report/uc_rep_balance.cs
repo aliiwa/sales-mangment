@@ -37,6 +37,7 @@ namespace sales_mangment.PL.report
             RPT.rpt_palance_1 rpt_1 = new RPT.rpt_palance_1();
             RPT.frm_report frm1 = new RPT.frm_report();
             DateTime date_1 = Convert.ToDateTime(this.dgv_balance.CurrentRow.Cells[0].Value.ToString());
+
             rpt_1.SetDataSource(rpt.GET_ALL_PALANCE_DETAILS(date_1));
             frm1.crystalReportViewer1.ReportSource = rpt_1;
            

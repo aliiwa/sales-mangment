@@ -53,6 +53,14 @@ namespace sales_mangment.BL
             return Dt;
         }
 
-
+        // اجراء لجلب كافة عناصر المنتجات من قاعدة البيانات
+        public DataTable GET_ALL_PRODUCT()
+        {
+            DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
+            DataTable Dt = new DataTable();
+            Dt = DAL.SelectData("GET_ALL_PRODUCT", null);
+            DAL.close();
+            return Dt;
+        }
     }
 }

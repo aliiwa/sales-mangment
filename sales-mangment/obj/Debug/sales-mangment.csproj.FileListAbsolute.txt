@@ -82,3 +82,4 @@ D:\Project\sales-mangment\sales-mangment\bin\Debug\ShockwaveFlashObjects.dll
 D:\Project\sales-mangment\sales-mangment\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 D:\Project\sales-mangment\sales-mangment\bin\Debug\stdole.dll
 D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.RPT.frm_report.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales-mangment.csprojResolveAssemblyReference.cache
