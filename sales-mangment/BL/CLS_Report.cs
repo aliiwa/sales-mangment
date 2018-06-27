@@ -37,6 +37,8 @@ namespace sales_mangment.BL
             return Dt;
         }
 
+
+
         // اجراء البحث عن الارصدة
         public DataTable GET_ALL_PALANCE_DETAILS(DateTime date)
         {
@@ -59,6 +61,47 @@ namespace sales_mangment.BL
             DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
             DataTable Dt = new DataTable();
             Dt = DAL.SelectData("GET_ALL_PRODUCT", null);
+            DAL.close();
+            return Dt;
+        }
+
+
+        // اجراء لجلب كافة عناصر المنتجات من قاعدة البيانات
+        public DataTable GET_INV_DATE()
+        {
+            DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
+            DataTable Dt = new DataTable();
+            Dt = DAL.SelectData("GET_INV_DATE", null);
+            DAL.close();
+            return Dt;
+        }
+
+        public DataTable GET_INV_CODE(DateTime date)
+        {
+            DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
+            DataTable Dt = new DataTable();
+
+            SqlParameter[] param = new SqlParameter[1];
+
+            param[0] = new SqlParameter("@date", SqlDbType.Date);
+            param[0].Value = date;
+
+            Dt = DAL.SelectData("GET_INV_CODE", param);
+            DAL.close();
+            return Dt;
+        }
+
+        public DataTable RPT_SALES_POINT(DateTime date)
+        {
+            DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
+            DataTable Dt = new DataTable();
+
+            SqlParameter[] param = new SqlParameter[1];
+
+            param[0] = new SqlParameter("@date", SqlDbType.Date);
+            param[0].Value = date;
+
+            Dt = DAL.SelectData("RPT_SALES_POINT", param);
             DAL.close();
             return Dt;
         }

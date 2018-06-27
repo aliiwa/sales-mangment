@@ -69,9 +69,10 @@ namespace sales_mangment.PL
             if(rdo_sales.Checked == true)
             {
                 Double rdoSales = 1;
-            inv.ADD_INVOIES(txt_inv_code1.Text, dt_inv_date.Value, Convert.ToDouble(txt_inv_discount1.Text)
+            inv.ADD_INVOIES(txt_inv_code1.Text, dt_inv_date1.Value, Convert.ToDouble(txt_inv_discount1.Text)
                 , Convert.ToDouble(txt_inv_extra2.Text), Convert.ToInt32(cmb_customer.SelectedValue), Convert.ToDouble(txt_inv_total1.Text),
-                Convert.ToDouble(txt_prid.Text),rdoSales, Convert.ToDouble(txt_total_cost.Text), Convert.ToDouble(total_profit1.Text));
+                Convert.ToDouble(txt_prid.Text),rdoSales, Convert.ToDouble(txt_total_cost.Text), Convert.ToDouble(total_profit1.Text)
+                ,Convert.ToDouble(txt_prid.Text),txt_prid_ar.Text,Convert.ToDouble(txt_remain.Text),txt_remain_ar.Text );
 
             for (int i = 0; i < dgv_invoies.Rows.Count - 1; i++)
             {
@@ -85,6 +86,7 @@ namespace sales_mangment.PL
                     Convert.ToDouble(dgv_invoies.Rows[i].Cells[5].Value.ToString())
                     );
             }
+                dgv_invoies.Rows.Clear();
             MessageBox.Show("تمت الاضافة بنجاح ", "عملية الإضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -92,7 +94,8 @@ namespace sales_mangment.PL
                 Double rdoSales = 0;
                 inv.ADD_INVOIES(txt_inv_code1.Text, dt_inv_date.Value, Convert.ToDouble(txt_inv_discount1.Text)
                     , Convert.ToDouble(txt_inv_extra2.Text), Convert.ToInt32(cmb_customer.SelectedValue),
-                    Convert.ToDouble(txt_inv_total1.Text), Convert.ToDouble(txt_prid.Text), rdoSales, Convert.ToDouble(txt_total_cost.Text), Convert.ToDouble(total_profit1.Text));
+                    Convert.ToDouble(txt_inv_total1.Text), Convert.ToDouble(txt_prid.Text), rdoSales, Convert.ToDouble(txt_total_cost.Text),
+                    Convert.ToDouble(total_profit1.Text), Convert.ToDouble(txt_prid.Text), txt_prid_ar.Text, Convert.ToDouble(txt_remain.Text), txt_remain_ar.Text);
 
                 for (int i = 0; i < dgv_invoies.Rows.Count - 1; i++)
                 {
@@ -132,6 +135,9 @@ namespace sales_mangment.PL
         private void btn_new_Click(object sender, EventArgs e)
         {
             txt_inv_code1.Text = inv.GET_MAX_INVOIES_ID().Rows[0][0].ToString();
+            dgv_invoies.DataSource = Dt;
+            Dt.Rows.Clear();
+            dgv_invoies.Refresh();
         }
 
         // اجراء البحث 
@@ -221,7 +227,7 @@ namespace sales_mangment.PL
             {
                 txt_prid.Text = txt_inv_total1.Text;
                 txt_remain.Text = Convert.ToString(00);
-                txt_prid.ReadOnly = true;
+               
             }
 
         }
@@ -255,7 +261,12 @@ namespace sales_mangment.PL
             {
                 txt_prid.Text = txt_inv_total1.Text;
                 txt_remain.Text = Convert.ToString(00);
-                txt_prid.ReadOnly = true;
+                //txt_prid.ReadOnly = true;
+            }
+            else
+            {
+                txt_prid.Text = txt_inv_total1.Text;
+                txt_remain.Text = Convert.ToString(00);
             }
 
         }
@@ -289,10 +300,11 @@ namespace sales_mangment.PL
         // اجراء تعبئة القيمة الي الداتا قيرد فيو والتحقق منها
         private void txt_pro_quantati_KeyDown(object sender, KeyEventArgs e)
         {
-            
+                   
                 if (e.KeyCode == Keys.Enter && txt_pro_quantati.Text != string.Empty)
                 {
-               
+                if (rdo_sales.Checked == true)
+                {
                     if (inv.VerifyQuantity(txt_pro_code.Text, Convert.ToInt32(txt_pro_quantati.Text)).Rows.Count < 1 || Convert.ToInt32(txt_pro_quantati.Text) == 0 || Convert.ToInt32(txt_pro_quantati.Text) < 0)
                     {
                         MessageBox.Show(" الكمية المدخلة غير موحودة", "تنبية ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -334,8 +346,46 @@ namespace sales_mangment.PL
                 total_profit1.Text = Convert.ToString(total_profit);
                 clearBox();
                 }
-            }
-        
+                else /*if (rdo_sales.Checked == true)*/
+                {
+                    DataRow r = Dt.NewRow();
+
+                    for (int i = 0; i < dgv_invoies.Rows.Count - 1; i++)
+                    {
+                        if (dgv_invoies.Rows[i].Cells[0].Value.ToString() == txt_pro_code.Text)
+                        {
+                            MessageBox.Show("هذا الصنف موجد مسبقاً", "تنبية ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    }
+                    r[0] = txt_pro_code.Text;
+                    r[1] = txt_pro_name.Text;
+                    r[2] = txt_pro_unit.Text;
+                    r[3] = txt_pro_price.Text;
+                    r[4] = txt_pro_quantati.Text;
+                    r[5] = txt_pro_total.Text;
+                    r[6] = txt_pay.Text;
+                    //Dt.Rows.Clear();
+                    Dt.Rows.Add(r);
+                    dgv_invoies.DataSource = Dt;
+
+
+                    txt_inv_total1.Text = (from DataGridViewRow row in dgv_invoies.Rows
+                                           where row.Cells[5].FormattedValue.ToString() != string.Empty
+                                           select Convert.ToDouble(row.Cells[5].FormattedValue)).Sum().ToString();
+
+                    txt_total_cost.Text = (from DataGridViewRow row in dgv_invoies.Rows
+                                           where row.Cells[6].FormattedValue.ToString() != string.Empty
+                                           select Convert.ToDouble(row.Cells[6].FormattedValue)).Sum().ToString();
+
+                    Double total_profit = Convert.ToDouble(txt_inv_total1.Text) - Convert.ToDouble(txt_total_cost.Text);
+                    total_profit1.Text = Convert.ToString(total_profit);
+                    clearBox();
+                }
+            }// end  if enter
+           
+
+        }// end txt_pro_quntity
 
         // اجراء تفقيط الاجماليات
 
@@ -357,6 +407,18 @@ namespace sales_mangment.PL
                 txt_prid_ar.Text = N2C.ConvertN2C.ConvertNow(Convert.ToDouble(txt_prid.Text), "دينار", "درهم");
             }
 
+            if (txt_remain_ar.Text == string.Empty)
+            {
+                txt_remain_ar.Text = "صفر";
+            }
+
+            if (txt_inv_total1.Text != null)
+            {
+                double total = Convert.ToDouble(txt_inv_total1.Text);
+            double prid = Convert.ToDouble(txt_prid.Text);
+            Double remain = total - prid;
+            txt_remain.Text = Convert.ToString( remain);
+            }
         }
 
         /************************************ ازرار **********************************************************/
@@ -424,6 +486,25 @@ namespace sales_mangment.PL
             txt_pro_unit.Clear();
         }
 
-     
+        private void txt_remain_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_remain.Text == string.Empty)
+            {
+
+                txt_remain.Text = Convert.ToString(0);
+                txt_remain_ar.Text = N2C.ConvertN2C.ConvertNow(Convert.ToDouble(txt_remain.Text), "دينار", "درهم");
+            }
+            else
+            {
+                txt_remain_ar.Text = N2C.ConvertN2C.ConvertNow(Convert.ToDouble(txt_remain.Text), "دينار", "درهم");
+            }
+
+            
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            dgv_invoies.Rows.RemoveAt(dgv_invoies.CurrentRow.Index);
+        }
     }
 }

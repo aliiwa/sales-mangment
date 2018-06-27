@@ -41,14 +41,15 @@ namespace sales_mangment.BL
 
         // اجراء لاضافة البيانات لقاعدة البيانات
         public void ADD_INVOIES(string sales_code, DateTime sales_date, Double sales_discount, Double sales_exstra
-                        , int cust_id, Double total_invoes, Double pro_sale, Double sales_type,Double total_cost, Double total_profit)
+                        , int cust_id, Double total_invoes, Double pro_sale, Double sales_type,Double total_cost, Double total_profit
+                        , Double total_paid,string total_paid_text,Double total_remain,string total_remain_text)
 
         {
             /*, Double pro_pay, Double pro_sale*/
             /*, int cust_id*/
             DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
             DAL.open();
-            SqlParameter[] param = new SqlParameter[10];
+            SqlParameter[] param = new SqlParameter[14];
             param[0] = new SqlParameter("@sales_code", SqlDbType.NVarChar, 50);
             param[0].Value = sales_code;
 
@@ -73,13 +74,25 @@ namespace sales_mangment.BL
             param[7] = new SqlParameter("@total_profit", SqlDbType.Float);
             param[7].Value = total_profit;
 
-
-
             param[8] = new SqlParameter("@pro_sale", SqlDbType.Float);
             param[8].Value = pro_sale;
 
             param[9] = new SqlParameter("@sales_type", SqlDbType.Float);
             param[9].Value = sales_type;
+
+            //Double total_paid,string total_paid_text, Double total_remain,string total_remain_text
+
+            param[10] = new SqlParameter("@total_paid", SqlDbType.Float);
+            param[10].Value = total_paid;
+
+            param[11] = new SqlParameter("@total_paid_text", SqlDbType.NVarChar,50);
+            param[11].Value = total_paid_text;
+
+            param[12] = new SqlParameter("@total_remain", SqlDbType.Float);
+            param[12].Value = total_remain;
+
+            param[13] = new SqlParameter("@total_remain_text", SqlDbType.NVarChar, 50);
+            param[13].Value = total_remain_text;
 
             DAL.ExcuteCommand("ADD_INVOIES", param);
             DAL.close();

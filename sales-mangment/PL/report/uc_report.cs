@@ -19,6 +19,7 @@ namespace sales_mangment.PL.report
 
         private void chk_point_sales_OnChange(object sender, EventArgs e)
         {
+            uc_rpt_sales_point1.BringToFront();
             chk_point_sales.Checked = true;
             chk_bills.Checked = false;
             chk_supplyer.Checked = false;
@@ -78,5 +79,7 @@ namespace sales_mangment.PL.report
             chk_product.Checked = false;
             chk_balance.Checked = true;
         }
+
+
     }
 }

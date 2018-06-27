@@ -1,67 +1,8 @@
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\bin\Debug\sales-mangment.exe.config
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales-mangment.exe
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\bin\Debug\sales-mangment.exe
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\bin\Debug\sales-mangment.pdb
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\bin\Debug\Bunifu_UI_v1.5.3.dll
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\bin\Debug\DevComponents.DotNetBar2.dll
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\bin\Debug\N2C.dll
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.bills1.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_category.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_main.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_unit.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_report.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rep_balance.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rep_coutomer.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rep_product.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rep_supplyer.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_bills11.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_bills12.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_coustomer1.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_point_sales1.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_procduct1.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_supplyer1.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.Properties.Resources.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales-mangment.csproj.GenerateResource.Cache
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales-mangment.pdb
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_choose_coustomer.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_choose_supplay.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_option.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.option.uc_option_db.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.option.uc_option_connect.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_users.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.users.uc_user_control.resources
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales-mangment.csprojResolveAssemblyReference.cache
-C:\Users\aliwa\Documents\Visual Studio 2015\Projects\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.frm_close_balance.resources
 D:\Project\sales-mangment\sales-mangment\bin\Debug\sales-mangment.exe.config
 D:\Project\sales-mangment\sales-mangment\obj\Debug\sales-mangment.exe
 D:\Project\sales-mangment\sales-mangment\obj\Debug\sales-mangment.pdb
 D:\Project\sales-mangment\sales-mangment\bin\Debug\sales-mangment.exe
 D:\Project\sales-mangment\sales-mangment\bin\Debug\sales-mangment.pdb
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.bills1.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_category.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_choose_coustomer.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_choose_supplay.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_main.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_unit.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.option.uc_option_connect.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.option.uc_option_db.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.frm_close_balance.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_report.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rep_balance.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rep_coutomer.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rep_product.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rep_supplyer.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_bills11.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_bills12.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_coustomer1.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_option.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_point_sales1.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_procduct1.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_supplyer1.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_users.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.users.uc_user_control.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.Properties.Resources.resources
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales-mangment.csproj.GenerateResource.Cache
 D:\Project\sales-mangment\sales-mangment\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 D:\Project\sales-mangment\sales-mangment\bin\Debug\CrystalDecisions.ReportSource.dll
 D:\Project\sales-mangment\sales-mangment\bin\Debug\CrystalDecisions.Shared.dll
@@ -81,5 +22,31 @@ D:\Project\sales-mangment\sales-mangment\bin\Debug\CrystalDecisions.ReportAppSer
 D:\Project\sales-mangment\sales-mangment\bin\Debug\ShockwaveFlashObjects.dll
 D:\Project\sales-mangment\sales-mangment\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 D:\Project\sales-mangment\sales-mangment\bin\Debug\stdole.dll
-D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.RPT.frm_report.resources
 D:\Project\sales-mangment\sales-mangment\obj\Debug\sales-mangment.csprojResolveAssemblyReference.cache
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.bills1.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_category.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_choose_coustomer.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_choose_supplay.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_main.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.frm_unit.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.option.uc_option_connect.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.option.uc_option_db.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.frm_close_balance.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_report.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rep_balance.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rep_coutomer.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rep_product.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rep_supplyer.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.report.uc_rpt_sales_point.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_bills11.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_bills12.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_coustomer1.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_option.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_point_sales1.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_procduct1.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_supplyer1.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.uc_users.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.PL.users.uc_user_control.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.Properties.Resources.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales_mangment.RPT.frm_report.resources
+D:\Project\sales-mangment\sales-mangment\obj\Debug\sales-mangment.csproj.GenerateResource.Cache

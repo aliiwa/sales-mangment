@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_point_sales1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdo_buy = new System.Windows.Forms.RadioButton();
@@ -59,16 +59,16 @@
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dgv_invoies = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_profit1 = new System.Windows.Forms.TextBox();
-            this.total_profit1 = new System.Windows.Forms.TextBox();
-            this.txt_total_cost = new System.Windows.Forms.TextBox();
-            this.txt_pay = new System.Windows.Forms.TextBox();
             this.txt_remain_ar = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.txt_prid_ar = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txt_remain = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txt_prid = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txt_profit1 = new System.Windows.Forms.TextBox();
+            this.total_profit1 = new System.Windows.Forms.TextBox();
+            this.txt_total_cost = new System.Windows.Forms.TextBox();
+            this.txt_pay = new System.Windows.Forms.TextBox();
             this.btn_new = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_save = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_edit = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -180,6 +180,7 @@
             this.txt_inv_total1.Name = "txt_inv_total1";
             this.txt_inv_total1.Size = new System.Drawing.Size(176, 35);
             this.txt_inv_total1.TabIndex = 29;
+            this.txt_inv_total1.Text = "0";
             // 
             // txt_inv_extra2
             // 
@@ -394,20 +395,20 @@
             // 
             // dgv_invoies
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgv_invoies.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgv_invoies.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_invoies.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_invoies.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgv_invoies.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_invoies.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(53)))), ((int)(((byte)(93)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("JF Flat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_invoies.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(53)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("JF Flat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_invoies.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_invoies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_invoies.ColumnHeadersVisible = false;
             this.dgv_invoies.DoubleBuffered = true;
@@ -437,34 +438,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(982, 133);
             this.panel1.TabIndex = 4;
-            // 
-            // txt_profit1
-            // 
-            this.txt_profit1.Location = new System.Drawing.Point(6, 593);
-            this.txt_profit1.Name = "txt_profit1";
-            this.txt_profit1.Size = new System.Drawing.Size(100, 35);
-            this.txt_profit1.TabIndex = 19;
-            // 
-            // total_profit1
-            // 
-            this.total_profit1.Location = new System.Drawing.Point(218, 593);
-            this.total_profit1.Name = "total_profit1";
-            this.total_profit1.Size = new System.Drawing.Size(100, 35);
-            this.total_profit1.TabIndex = 18;
-            // 
-            // txt_total_cost
-            // 
-            this.txt_total_cost.Location = new System.Drawing.Point(324, 593);
-            this.txt_total_cost.Name = "txt_total_cost";
-            this.txt_total_cost.Size = new System.Drawing.Size(100, 35);
-            this.txt_total_cost.TabIndex = 17;
-            // 
-            // txt_pay
-            // 
-            this.txt_pay.Location = new System.Drawing.Point(112, 593);
-            this.txt_pay.Name = "txt_pay";
-            this.txt_pay.Size = new System.Drawing.Size(100, 35);
-            this.txt_pay.TabIndex = 16;
             // 
             // txt_remain_ar
             // 
@@ -507,6 +480,7 @@
             this.txt_remain.TabIndex = 12;
             this.txt_remain.Text = "0";
             this.txt_remain.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_remain.TextChanged += new System.EventHandler(this.txt_remain_TextChanged);
             this.txt_remain.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.only_numper_KeyPress);
             // 
             // bunifuCustomLabel8
@@ -532,6 +506,34 @@
             this.txt_prid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_prid.TextChanged += new System.EventHandler(this.txt_prid_TextChanged);
             this.txt_prid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.only_numper_KeyPress);
+            // 
+            // txt_profit1
+            // 
+            this.txt_profit1.Location = new System.Drawing.Point(6, 593);
+            this.txt_profit1.Name = "txt_profit1";
+            this.txt_profit1.Size = new System.Drawing.Size(100, 35);
+            this.txt_profit1.TabIndex = 19;
+            // 
+            // total_profit1
+            // 
+            this.total_profit1.Location = new System.Drawing.Point(218, 593);
+            this.total_profit1.Name = "total_profit1";
+            this.total_profit1.Size = new System.Drawing.Size(100, 35);
+            this.total_profit1.TabIndex = 18;
+            // 
+            // txt_total_cost
+            // 
+            this.txt_total_cost.Location = new System.Drawing.Point(324, 593);
+            this.txt_total_cost.Name = "txt_total_cost";
+            this.txt_total_cost.Size = new System.Drawing.Size(100, 35);
+            this.txt_total_cost.TabIndex = 17;
+            // 
+            // txt_pay
+            // 
+            this.txt_pay.Location = new System.Drawing.Point(112, 593);
+            this.txt_pay.Name = "txt_pay";
+            this.txt_pay.Size = new System.Drawing.Size(100, 35);
+            this.txt_pay.TabIndex = 16;
             // 
             // btn_new
             // 
@@ -678,6 +680,7 @@
             this.btn_delete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_delete.Textcolor = System.Drawing.Color.White;
             this.btn_delete.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_print
             // 
@@ -872,20 +875,20 @@
             // 
             // dgv_search
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgv_search.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgv_search.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_search.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_search.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgv_search.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_search.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(53)))), ((int)(((byte)(93)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("JF Flat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_search.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(53)))), ((int)(((byte)(93)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("JF Flat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_search.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgv_search.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_search.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,

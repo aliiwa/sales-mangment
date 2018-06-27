@@ -173,6 +173,12 @@
     <Compile Include="PL\report\uc_rep_supplyer.Designer.cs">
       <DependentUpon>uc_rep_supplyer.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\report\uc_rpt_sales_point.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\report\uc_rpt_sales_point.Designer.cs">
+      <DependentUpon>uc_rpt_sales_point.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\uc_bills11.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -235,6 +241,12 @@
     <Compile Include="RPT\frm_report.Designer.cs">
       <DependentUpon>frm_report.cs</DependentUpon>
     </Compile>
+    <Compile Include="RPT\rpt_inv_details.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_inv_details.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RPT\rpt_palance.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -251,6 +263,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rpt_products.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_sales_point.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_sales_point.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="PL\bills1.resx">
@@ -295,6 +313,9 @@
     <EmbeddedResource Include="PL\report\uc_rep_supplyer.resx">
       <DependentUpon>uc_rep_supplyer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\report\uc_rpt_sales_point.resx">
+      <DependentUpon>uc_rpt_sales_point.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\uc_bills11.resx">
       <DependentUpon>uc_bills11.cs</DependentUpon>
     </EmbeddedResource>
@@ -334,6 +355,10 @@
     <EmbeddedResource Include="RPT\frm_report.resx">
       <DependentUpon>frm_report.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_inv_details.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_inv_details.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\rpt_palance.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_palance.cs</LastGenOutput>
@@ -345,6 +370,10 @@
     <EmbeddedResource Include="RPT\rpt_products.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_products.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_sales_point.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_sales_point.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
